@@ -13,7 +13,7 @@ class ApiService {
     if (response.statusCode == 200) {
       final parsedData =
           json.decode(response.body).cast<Map<String, dynamic>>();
-      return parsedData.Map<PostModel>((json) => PostModel.fromJson(json))
+      return parsedData.map<PostModel>((json) => PostModel.fromJson(json))
           .toList();
     } else {
       throw Exception("Failed to load Data");

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'services/my_home_page.dart';
+import 'screens/my_home_page.dart';
 
 void main() {
   runApp(const MyApp());
